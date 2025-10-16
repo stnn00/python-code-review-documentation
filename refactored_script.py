@@ -40,11 +40,11 @@ def process_strings(strings):
 
 
 def main():
-    list1 = [1, 2, 3, 4, 5, 6, 7]
-    list2 = ["apple", "banana", "kiwi", "grapefruit", "cherry"]
+    numbers = [1, 2, 3, 4, 5, 6, 7]
+    fruits = ["apple", "banana", "kiwi", "grapefruit", "cherry"]
 
-    processed_numbers = process_numbers(list1)
-    processed_strings = process_strings(list2)
+    processed_numbers = process_numbers(numbers)
+    processed_strings = process_strings(fruits)
 
     print("Processed Numbers:", processed_numbers)
     print("Processed Strings:", processed_strings)
