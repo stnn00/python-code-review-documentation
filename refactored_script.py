@@ -40,6 +40,14 @@ def process_strings(strings):
 
 
 def main():
+    """
+    Runs the main workflow of processing of numbers and strings:
+    - Creates a list of numbers and a list of fruits.
+    - Processes numbers using `process_numbers()`.
+    - Processes strings using `process_strings()`.
+    - Prints the results of the processed numbers and strings.
+    """
+
     numbers = [1, 2, 3, 4, 5, 6, 7]
     fruits = ["apple", "banana", "kiwi", "grapefruit", "cherry"]
 
