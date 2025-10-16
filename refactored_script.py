@@ -11,14 +11,7 @@ def process_numbers(numbers):
         list of int: A new list containing the processed numbers.
     """
 
-    processed_numbers = []
-
-    for number in numbers:
-        if number % 2 == 0:
-            processed_numbers.append(number * 2)
-        else:
-            processed_numbers.append(number * 3)
-            
+    processed_numbers = [num * 2 if num % 2 == 0 else num * 3 for num in numbers]  # Apply activity requirements for even/odd numbers
     return processed_numbers
 
 
