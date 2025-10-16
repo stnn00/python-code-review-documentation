@@ -8,9 +8,9 @@ def process_numbers(numbers):
     return processed_numbers
 
 
-def do_string_stuff(list_of_strings):
+def process_strings(strings):
     x = ""
-    for s in list_of_strings:
+    for s in strings:
         if len(s) > 5:
             x += s.upper() + " "
         else:
@@ -23,7 +23,7 @@ def main():
     list2 = ["apple", "banana", "kiwi", "grapefruit", "cherry"]
 
     processed_numbers = process_numbers(list1)
-    processed_strings = do_string_stuff(list2)
+    processed_strings = process_strings(list2)
 
     print("Processed Numbers:", processed_numbers)
     print("Processed Strings:", processed_strings)
