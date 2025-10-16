@@ -1,33 +1,62 @@
-def do_math_stuff(list_of_nums):
-    result = []
-    for num in list_of_nums:
-        if num % 2 == 0:
-            result.append(num * 2)
-        else:
-            result.append(num * 3)
-    return result
+def process_numbers(numbers):
+    """
+    Multiplies each integer in the list depending on whether it is even or odd:
+    - Even numbers are doubled.
+    - Odd numbers are tripled.
+
+    Parameters:
+        numbers (list of int): The list containing integers to process.
+
+    Returns:
+        list of int: A new list containing the processed numbers.
+    """
+
+    processed_numbers = [num * 2 if num % 2 == 0 else num * 3 for num in numbers]  # Apply activity requirements for even/odd numbers
+    return processed_numbers
 
 
-def do_string_stuff(list_of_strings):
-    x = ""
-    for s in list_of_strings:
-        if len(s) > 5:
-            x += s.upper() + " "
-        else:
-            x += s.lower() + " "
-    return x.strip()
+def process_strings(strings):
+    """
+    Processes a list of strings:
+    - Converts strings longer than 5 letters to uppercase format.
+    - Converts shorter strings to lowercase format.
+    - Returns a single string of all processed words.
+
+    Parameters:
+        strings (list of str): The list containing strings to process.
+    
+    Returns:
+        str: A single string containing all processed words.
+    """
+
+    processed_words = ""  # Sets up string to store processed words
+
+    words = [word.upper() if len(word) > 5 else word.lower() for word in strings]  # Convert 5+ character words to uppercase, otherwise lowercase
+
+    for word in words:
+        processed_words += word + " "  # Add each processed word with a space
+    
+    return processed_words.strip()  # Remove extra space at the end
 
 
 def main():
-    list1 = [1, 2, 3, 4, 5, 6, 7]
-    list2 = ["apple", "banana", "kiwi", "grapefruit", "cherry"]
+    """
+    Runs the main workflow for processing numbers and strings:
+    - Creates a list of numbers and a list of fruits.
+    - Processes numbers using `process_numbers()`.
+    - Processes strings using `process_strings()`.
+    - Prints the results of the processed numbers and strings.
+    """
 
-    processed_nums = do_math_stuff(list1)
-    processed_strings = do_string_stuff(list2)
+    numbers = [1, 2, 3, 4, 5, 6, 7]  # List of numbers to process
+    fruits = ["apple", "banana", "kiwi", "grapefruit", "cherry"]  # List of words to process
 
-    print("Processed Numbers:", processed_nums)
+    processed_numbers = process_numbers(numbers)
+    processed_strings = process_strings(fruits)
+
+    print("Processed Numbers:", processed_numbers)
     print("Processed Strings:", processed_strings)
 
 
 if __name__ == "__main__":
-    main()
+    main()  # Execute main() only when this file is run directly
