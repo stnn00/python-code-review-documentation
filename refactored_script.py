@@ -16,12 +16,27 @@ def process_numbers(numbers):
 
 
 def process_strings(strings):
+    """
+    Processes a list of strings:
+    - Converts strings longer than 5 letters to uppercase format.
+    - Converts shorter strings to lowercase format.
+    - Returns a single string of all processed words.
+
+    Parameters:
+        strings (list of str): The list containing strings to process.
+    
+    Returns:
+        str: A single string containing all processed words.
+    """
+
     x = ""
+
     for string in strings:
         if len(string) > 5:
             x += string.upper() + " "
         else:
             x += string.lower() + " "
+
     return x.strip()
 
 
