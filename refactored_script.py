@@ -59,4 +59,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    main()  # Execute main() only when this file is run directly
