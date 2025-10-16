@@ -31,12 +31,11 @@ def process_strings(strings):
 
     processed_words = ""
 
-    for string in strings:
-        if len(string) > 5:
-            processed_words += string.upper() + " "
-        else:
-            processed_words += string.lower() + " "
+    words = [word.upper() if len(word) > 5 else word.lower() for word in strings]
 
+    for word in words:
+        processed_words += word + " "
+    
     return processed_words.strip()
 
 
