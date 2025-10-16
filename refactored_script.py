@@ -1,10 +1,24 @@
 def process_numbers(numbers):
+    """
+    Multiplies each integer in the list depending on whether it is even or odd:
+    - Even numbers are doubled.
+    - Odd numbers are tripled.
+
+    Parameters:
+        numbers (list of int): The list containing integers to process.
+
+    Returns:
+        list of int: A new list containing the processed numbers.
+    """
+
     processed_numbers = []
+
     for number in numbers:
         if number % 2 == 0:
             processed_numbers.append(number * 2)
         else:
             processed_numbers.append(number * 3)
+            
     return processed_numbers
 
 
