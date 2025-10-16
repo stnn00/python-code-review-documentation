@@ -17,11 +17,11 @@ def process_numbers(numbers):
 
 def process_strings(strings):
     x = ""
-    for s in strings:
-        if len(s) > 5:
-            x += s.upper() + " "
+    for string in strings:
+        if len(string) > 5:
+            x += string.upper() + " "
         else:
-            x += s.lower() + " "
+            x += string.lower() + " "
     return x.strip()
 
 
