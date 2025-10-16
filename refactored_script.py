@@ -29,14 +29,14 @@ def process_strings(strings):
         str: A single string containing all processed words.
     """
 
-    processed_words = ""
+    processed_words = ""  # Sets up string to store processed words
 
-    words = [word.upper() if len(word) > 5 else word.lower() for word in strings]
+    words = [word.upper() if len(word) > 5 else word.lower() for word in strings]  # Convert 5+ character words to uppercase, otherwise lowercase
 
     for word in words:
-        processed_words += word + " "
+        processed_words += word + " "  # Add each processed word with a space
     
-    return processed_words.strip()
+    return processed_words.strip()  # Remove extra space at the end
 
 
 def main():
