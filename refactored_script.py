@@ -29,15 +29,15 @@ def process_strings(strings):
         str: A single string containing all processed words.
     """
 
-    x = ""
+    processed_words = ""
 
     for string in strings:
         if len(string) > 5:
-            x += string.upper() + " "
+            processed_words += string.upper() + " "
         else:
-            x += string.lower() + " "
+            processed_words += string.lower() + " "
 
-    return x.strip()
+    return processed_words.strip()
 
 
 def main():
