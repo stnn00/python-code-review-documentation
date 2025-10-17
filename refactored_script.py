@@ -4,7 +4,7 @@ def multiply_numbers(numbers):
     - Even numbers are doubled.
     - Odd numbers are tripled.
 
-    Parameters:
+    Args:
         numbers (list of int): The list containing integers to process.
 
     Returns:
@@ -22,7 +22,7 @@ def format_strings(strings):
     - Converts shorter strings to lowercase format.
     - Returns a single string of all formatted words.
 
-    Parameters:
+    Args:
         strings (list of str): The list containing strings to format.
     
     Returns:
