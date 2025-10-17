@@ -11,8 +11,8 @@ def multiply_numbers(numbers):
         list of int: A new list containing the processed numbers.
     """
 
-    processed_numbers = [num * 2 if num % 2 == 0 else num * 3 for num in numbers]  # Apply activity requirements for even/odd numbers
-    return processed_numbers
+    multiplied_numbers = [num * 2 if num % 2 == 0 else num * 3 for num in numbers]  # Apply activity requirements for even/odd numbers
+    return multiplied_numbers
 
 
 def format_strings(strings):
@@ -51,10 +51,10 @@ def main():
     numbers = [1, 2, 3, 4, 5, 6, 7]  # List of numbers to process
     fruits = ["apple", "banana", "kiwi", "grapefruit", "cherry"]  # List of words to process
 
-    processed_numbers = multiply_numbers(numbers)
+    multiplied_numbers = multiply_numbers(numbers)
     processed_strings = format_strings(fruits)
 
-    print("Processed Numbers:", processed_numbers)
+    print("Processed Numbers:", multiplied_numbers)
     print("Processed Strings:", processed_strings)
 
 
