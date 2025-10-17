@@ -43,8 +43,8 @@ def main():
     """
     Runs the main workflow for processing numbers and strings:
     - Creates a list of numbers and a list of fruits.
-    - Processes numbers using `process_numbers()`.
-    - Processes strings using `process_strings()`.
+    - Multiplies numbers using `multiply_numbers()`.
+    - Formats strings using `format_strings()`.
     - Prints the results of the processed numbers and strings.
     """
 
@@ -54,7 +54,7 @@ def main():
     multiplied_numbers = multiply_numbers(numbers)
     processed_strings = format_strings(fruits)
 
-    print("Processed Numbers:", multiplied_numbers)
+    print("Multiplied Numbers:", multiplied_numbers)
     print("Processed Strings:", processed_strings)
 
 
