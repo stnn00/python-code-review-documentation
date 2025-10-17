@@ -15,28 +15,27 @@ def multiply_numbers(numbers):
     return multiplied_numbers
 
 
-def format_strings(strings):
+def format_words(words):
     """
-    Formats a list of strings:
-    - Converts strings longer than 5 letters to uppercase format.
-    - Converts shorter strings to lowercase format.
+    Formats a list of words:
+    - Converts words longer than 5 letters to uppercase format.
+    - Converts shorter words to lowercase format.
     - Returns a single string of all formatted words.
 
     Args:
-        strings (list of str): The list containing strings to format.
+        words (list of str): The list containing words to format.
     
     Returns:
         str: A single string containing all formatted words.
     """
 
-    formatted_strings = ""  # Sets up string to store formatted words
+    formatted_words = [word.upper() if len(word) > 5 else word.lower() for word in words]  # Convert 5+ character words to uppercase, otherwise lowercase
 
-    words = [word.upper() if len(word) > 5 else word.lower() for word in strings]  # Convert 5+ character words to uppercase, otherwise lowercase
-
-    for word in words:
-        formatted_strings += word + " "  # Add each formatted word with a space
+    formatted_string = ""
+    for word in formatted_words:
+        formatted_string += word + " "  # Add each formatted word with a space
     
-    return formatted_strings.strip()  # Remove extra space at the end
+    return formatted_string.strip()  # Remove extra space at the end
 
 
 def main():
@@ -52,10 +51,10 @@ def main():
     fruits = ["apple", "banana", "kiwi", "grapefruit", "cherry"]  # List of words to format
 
     multiplied_numbers = multiply_numbers(numbers)
-    formatted_strings = format_strings(fruits)
+    formatted_words = format_words(fruits)
 
     print("Multiplied Numbers:", multiplied_numbers)
-    print("Formatted Strings:", formatted_strings)
+    print("Formatted Words:", formatted_words)
 
 
 if __name__ == "__main__":
