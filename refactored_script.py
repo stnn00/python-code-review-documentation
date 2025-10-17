@@ -1,4 +1,4 @@
-def process_numbers(numbers):
+def multiply_numbers(numbers):
     """
     Multiplies each integer in the list depending on whether it is even or odd:
     - Even numbers are doubled.
@@ -51,7 +51,7 @@ def main():
     numbers = [1, 2, 3, 4, 5, 6, 7]  # List of numbers to process
     fruits = ["apple", "banana", "kiwi", "grapefruit", "cherry"]  # List of words to process
 
-    processed_numbers = process_numbers(numbers)
+    processed_numbers = multiply_numbers(numbers)
     processed_strings = process_strings(fruits)
 
     print("Processed Numbers:", processed_numbers)
