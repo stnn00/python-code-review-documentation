@@ -29,14 +29,14 @@ def format_strings(strings):
         str: A single string containing all processed words.
     """
 
-    processed_words = ""  # Sets up string to store processed words
+    formatted_strings = ""  # Sets up string to store processed words
 
     words = [word.upper() if len(word) > 5 else word.lower() for word in strings]  # Convert 5+ character words to uppercase, otherwise lowercase
 
     for word in words:
-        processed_words += word + " "  # Add each processed word with a space
+        formatted_strings += word + " "  # Add each processed word with a space
     
-    return processed_words.strip()  # Remove extra space at the end
+    return formatted_strings.strip()  # Remove extra space at the end
 
 
 def main():
@@ -52,10 +52,10 @@ def main():
     fruits = ["apple", "banana", "kiwi", "grapefruit", "cherry"]  # List of words to process
 
     multiplied_numbers = multiply_numbers(numbers)
-    processed_strings = format_strings(fruits)
+    formatted_strings = format_strings(fruits)
 
     print("Multiplied Numbers:", multiplied_numbers)
-    print("Processed Strings:", processed_strings)
+    print("Formatted Strings:", formatted_strings)
 
 
 if __name__ == "__main__":
