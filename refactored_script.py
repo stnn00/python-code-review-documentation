@@ -40,11 +40,11 @@ def format_words(words):
 
 def main():
     """
-    Runs the main workflow for processing numbers and strings:
+    Runs the main workflow for processing numbers and words:
     - Creates a list of numbers and a list of fruits.
     - Multiplies numbers using `multiply_numbers()`.
-    - Formats strings using `format_strings()`.
-    - Prints the results of the multiplied numbers and formatted strings.
+    - Formats words using `format_words()`.
+    - Prints the results of the multiplied numbers and formatted words.
     """
 
     numbers = [1, 2, 3, 4, 5, 6, 7]  # List of numbers to multiply
