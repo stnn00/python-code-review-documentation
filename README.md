@@ -15,7 +15,7 @@ The refactored script includes functions for multiplying numbers and formatting 
 
 ## Repository Files
 - `undocumented_script.py` - Original starter Python script provided for the assignment.
-- `refactored_script.py` - Refactored Python script with descriptive names, docstrings, and inline comments.
+- `refactored_script.py` - Refactored Python script with descriptive names, doc-strings, and inline comments.
 - `DECISIONS.md` - Documentation explaining design choices and refactoring rationale.
 - `README.md` - Overview of the project, workflow, and instructions.
 - `LICENSE` - MIT license included as instructed by the course tutorial.
