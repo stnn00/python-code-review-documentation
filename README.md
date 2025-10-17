@@ -3,6 +3,10 @@
 ## Project Overview
 This project involved refactoring and documenting an existing Python script to improve readability, maintainability, and adherence to Pythonic practices. It also simulated a collaborative workflow through a self-review using GitHub pull requests and review features.
 
+## Screencast Overview
+
+Video on YouTube (03:52): *[https://youtu.be/A6nQh4gIfUE](https://youtu.be/A6nQh4gIfUE)*
+
 ## Refactored Functionality
 The refactored script includes functions for multiplying numbers and formatting words:
 - `multiply_numbers(numbers)`: Takes a list of integers and returns a new list where even numbers are doubled and odd numbers are tripled.
@@ -11,7 +15,7 @@ The refactored script includes functions for multiplying numbers and formatting 
 
 ## Repository Files
 - `undocumented_script.py` - Original starter Python script provided for the assignment.
-- `refactored_script.py` - Refactored Python script with descriptive names, docstrings, and inline comments.
+- `refactored_script.py` - Refactored Python script with descriptive names, doc-strings, and inline comments.
 - `DECISIONS.md` - Documentation explaining design choices and refactoring rationale.
 - `README.md` - Overview of the project, workflow, and instructions.
 - `LICENSE` - MIT license included as instructed by the course tutorial.
