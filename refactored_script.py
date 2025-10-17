@@ -11,7 +11,7 @@ def multiply_numbers(numbers):
         list of int: A new list containing the multiplied numbers.
     """
 
-    multiplied_numbers = [num * 2 if num % 2 == 0 else num * 3 for num in numbers]  # Apply activity requirements for even/odd numbers
+    multiplied_numbers = [number * 2 if number % 2 == 0 else number * 3 for number in numbers]  # Apply activity requirements for even/odd numbers
     return multiplied_numbers
 
 
