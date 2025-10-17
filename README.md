@@ -3,6 +3,10 @@
 ## Project Overview
 This project involved refactoring and documenting an existing Python script to improve readability, maintainability, and adherence to Pythonic practices. It also simulated a collaborative workflow through a self-review using GitHub pull requests and review features.
 
+## Screencast Overview
+
+Video on YouTube (03:52): *[https://youtu.be/A6nQh4gIfUE](https://youtu.be/A6nQh4gIfUE)*
+
 ## Refactored Functionality
 The refactored script includes functions for multiplying numbers and formatting words:
 - `multiply_numbers(numbers)`: Takes a list of integers and returns a new list where even numbers are doubled and odd numbers are tripled.
