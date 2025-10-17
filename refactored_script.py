@@ -1,3 +1,13 @@
+"""
+A script that processes lists of numbers and words.
+
+Functions:
+- multiply_numbers(numbers): Doubles even numbers and triples odd ones.
+- format_words(words): Makes words longer than 5 letters uppercase, others lowercase.
+
+The main() function runs both examples and prints the results.
+"""
+
 def multiply_numbers(numbers):
     """
     Multiplies each integer in the list depending on whether it is even or odd:
