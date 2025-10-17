@@ -19,7 +19,8 @@ def format_words(words):
     """
     Formats a list of words according to their length:
     - Converts words longer than 5 letters to uppercase format.
-    - Converts shorter words to lowercase format.
+    - Converts words shorter than 5 letters to lowercase format.
+    - Words with exactly 5 letters are also converted to lowercase.
     - Returns a string of all words separated by spaces.
 
     Args:
@@ -29,7 +30,9 @@ def format_words(words):
         str: A single string containing all formatted words.
     """
 
-    formatted_string = " ".join(word.upper() if len(word) > 5 else word.lower() for word in words)  # Convert 5+ character words to uppercase, otherwise lowercase
+    formatted_string = " ".join(
+        word.upper() if len(word) > 5 else word.lower() for word in words
+    )  # Convert words >5 letters to uppercase, otherwise lowercase
     return formatted_string
 
 
