@@ -15,9 +15,9 @@ def multiply_numbers(numbers):
     return processed_numbers
 
 
-def process_strings(strings):
+def format_strings(strings):
     """
-    Processes a list of strings:
+    Formats a list of strings:
     - Converts strings longer than 5 letters to uppercase format.
     - Converts shorter strings to lowercase format.
     - Returns a single string of all processed words.
@@ -52,7 +52,7 @@ def main():
     fruits = ["apple", "banana", "kiwi", "grapefruit", "cherry"]  # List of words to process
 
     processed_numbers = multiply_numbers(numbers)
-    processed_strings = process_strings(fruits)
+    processed_strings = format_strings(fruits)
 
     print("Processed Numbers:", processed_numbers)
     print("Processed Strings:", processed_strings)
