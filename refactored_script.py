@@ -20,7 +20,7 @@ def format_words(words):
     Formats a list of words according to their length:
     - Converts words longer than 5 letters to uppercase format.
     - Converts shorter words to lowercase format.
-    - Returns a single string of all formatted words with spaces to separate.
+    - Returns a string of all words separated by spaces.
 
     Args:
         words (list of str): The list containing words to format.
