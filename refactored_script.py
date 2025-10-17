@@ -29,13 +29,8 @@ def format_words(words):
         str: A single string containing all formatted words.
     """
 
-    formatted_words = [word.upper() if len(word) > 5 else word.lower() for word in words]  # Convert 5+ character words to uppercase, otherwise lowercase
-
-    formatted_string = ""
-    for word in formatted_words:
-        formatted_string += word + " "  # Add each formatted word with a space
-    
-    return formatted_string.strip()  # Remove extra space at the end
+    formatted_string = " ".join(word.upper() if len(word) > 5 else word.lower() for word in words)  # Convert 5+ character words to uppercase, otherwise lowercase
+    return formatted_string
 
 
 def main():
