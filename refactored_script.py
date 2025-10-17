@@ -8,7 +8,7 @@ def multiply_numbers(numbers):
         numbers (list of int): The list containing integers to process.
 
     Returns:
-        list of int: A new list containing the processed numbers.
+        list of int: A new list containing the multiplied numbers.
     """
 
     multiplied_numbers = [num * 2 if num % 2 == 0 else num * 3 for num in numbers]  # Apply activity requirements for even/odd numbers
@@ -17,10 +17,10 @@ def multiply_numbers(numbers):
 
 def format_words(words):
     """
-    Formats a list of words:
+    Formats a list of words according to their length:
     - Converts words longer than 5 letters to uppercase format.
     - Converts shorter words to lowercase format.
-    - Returns a single string of all formatted words.
+    - Returns a single string of all formatted words with spaces to separate.
 
     Args:
         words (list of str): The list containing words to format.
@@ -46,10 +46,10 @@ def main():
     fruits = ["apple", "banana", "kiwi", "grapefruit", "cherry"]  # List of words to format
 
     multiplied_numbers = multiply_numbers(numbers)
-    formatted_words = format_words(fruits)
+    formatted_fruits = format_words(fruits)
 
     print("Multiplied Numbers:", multiplied_numbers)
-    print("Formatted Words:", formatted_words)
+    print("Formatted Words:", formatted_fruits)
 
 
 if __name__ == "__main__":
